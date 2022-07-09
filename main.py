@@ -48,8 +48,7 @@ def main():
     load_dotenv()
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("url", help="just help",
-                        default=0, nargs="?", type=str)
+    parser.add_argument("url", help="just help", nargs="?", type=str)
     args = parser.parse_args()
     
     token = os.environ['BITLY_TOKEN']
