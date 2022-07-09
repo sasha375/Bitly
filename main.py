@@ -4,8 +4,6 @@ import os
 from urllib.parse import urlparse
 import argparse
 
-load_dotenv()
-
 parser = argparse.ArgumentParser()
 
 API_URL = "https://api-ssl.bitly.com/v4/"
@@ -49,6 +47,7 @@ def count_clicks(bitlink, headers):
 
 
 def main():
+    load_dotenv()
     parser.add_argument("url", help="just help",
                         default=0, nargs="?", type=str)
     args = parser.parse_args()
