@@ -8,3 +8,7 @@ poetry.lock
 pyproject.toml
 replit_zip_error_log.txt
 replit.nix
+.idea
+__pycache__
+.vscode
+.DS_Store
